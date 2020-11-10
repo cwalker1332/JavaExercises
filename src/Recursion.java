@@ -5,41 +5,50 @@ public class Recursion {
         int[] arr = {1, 2, 3, 4, 5};
 
         // call iterativeArray method
-        iterativeArray(arr);
+        System.out.println(iterativeArray(arr));;
 
         // call recursiveArray method
-        recursiveArray(arr, 4);
+        System.out.println(recursiveArray(arr, 4));
 
         // call iterative fibonacci
-        int n = 100;
-        iterativeFibonacci(n);
+        System.out.println(iterativeFibonacci(5));
 
         // call recursive fibonacci method
-        System.out.println(recursiveFibonacci(6));
+        System.out.println(recursiveFibonacci(5));
+
+        // call iterative factorial
+        System.out.println(iterativeFactorial(4));
+
+        // call recursive factorial
+        System.out.println(recursiveFactorial(4));
+
     }
 
     // Exercise: given the following loop, write the same thing but recursively
 
-    public static void iterativeArray(int[] array){
+    public static int[] iterativeArray(int[] array){
         // iterative version
         for (int index = 0; index < array.length; index++) {
             System.out.println(array[index]);
         }
+        return array;
     }
 
     // recursive version
-    public static void recursiveArray(int[] array, int index){
+    public static int[] recursiveArray(int[] array, int index){
         if (index != -1) {
             recursiveArray(array, index - 1);
             System.out.println(array[index]);
         }
+        return array;
     }
 
     // Exercise: create method to get fibonacci sequence iteratively and recursively
 
     // iterative version
-    public static void iterativeFibonacci() {
-        int n = 10, t1 = 0, t2 = 1;
+    public static int iterativeFibonacci(int n) {
+        int t1 = 0;
+        int t2 = 1;
         System.out.print("First " + n + " terms: ");
 
         for (int i = 1; i <= n; ++i) {
@@ -49,6 +58,8 @@ public class Recursion {
             t1 = t2;
             t2 = sum;
         }
+
+        return n;
     }
 
     // recursive version
@@ -64,7 +75,7 @@ public class Recursion {
     // Exercise: create method to get factorial of a number recursively and iteratively
 
     // iterative version
-    public static int factorial (int num) {
+    public static int iterativeFactorial (int num) {
         int result = 1;
         int i;
 
