@@ -5,7 +5,7 @@ package DSAPractice.Strings;
 public class ValidAnagram {
 
     public static boolean isAnagram(String s, String t){
-        //Removing white spaces from s1 and s2 and converting case to lower
+        //Removing white spaces from s and t and converting case to lower
         String s2 = s.replaceAll("s", "").toLowerCase();
         String t2 = t.replaceAll("s", "").toLowerCase();
 
