@@ -11,23 +11,16 @@ package DSAPractice.Strings;
 
 public class XyBalance {
     public static boolean xyBalance(String str){
-        // if string contains x, loop through string
-        if (str.contains("x")){
-            // start i at wherever the first x is
-            for (int i = str.indexOf("x"); i <= str.length() - 1; i++) {
-                // create temporary string that contains remainder of string following first x
-                String temp = str.substring(i, str.length());
-
-                // if remainder of string doesn't contain x and has a y, return true
-                if (!temp.contains("x") && temp.contains("y")) {
-                    return true;
-                }
+        // if string contains x and y, check to see if the last y appears after the last x
+        if (str.contains("x") && str.contains("y")){
+            // if last index of y is greater than index of x, return true
+            if (str.lastIndexOf("y") > str.lastIndexOf("x")){
+                return true;
             }
-        // if string doesn't contain x, automatically return true
+        // if string does not contain x, return true
         } else if (!str.contains("x")){
             return true;
         }
-
         return false;
     }
 
