@@ -1,9 +1,11 @@
+package DSAPractice;
+
 public class Node {
 
     // this class includes exercises to practice using LinkedLists
 
     /*
-    Write a method listLength(Node list) that receives the head of a singly linked list
+    Write a method listLength(ControlPractice.Node list) that receives the head of a singly linked list
     and returns the number of nodes in the linked list.
     What is the worst-case runtime complexity of your algorithm?
      */
@@ -14,7 +16,7 @@ public class Node {
     static Node list = new Node(data);
     static Node current;
 
-    // create Node constructor
+    // create ControlPractice.Node constructor
     public Node (String data) {
         this.data = data;
         this.next = null;
@@ -58,7 +60,7 @@ public class Node {
     }
 
     /*
-    Write a method called searchLinkedList(Node head, Object target) that receives the head of a linked list
+    Write a method called searchLinkedList(ControlPractice.Node head, Object target) that receives the head of a linked list
     and target search value, and returns true if the target is in the list, or false if the target is not in the list.
     What is the worst-case runtime complexity of your algorithm?
      */
