@@ -23,6 +23,7 @@ public class MapAB2 {
 
     public static Map<String, String> mapAB2(Map<String, String> map) {
 
+        // if value of keys a and b are equal, remove both from map
         if (map.get("a") == map.get("b")){
             map.remove("a");
             map.remove("b");
