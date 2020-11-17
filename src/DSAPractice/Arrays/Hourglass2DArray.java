@@ -20,10 +20,11 @@ public class Hourglass2DArray {
                         {0, 0, 0, -2, 0, 0},
                         {0, 0, 1, 2, 4, 0}};
 
+        // should return 28
         System.out.println(hourglassSum(arr));
     }
 
-    static int hourglassSum(int[][] arr) {
+    public static int hourglassSum(int[][] arr) {
         // create new empty ArrayList
         ArrayList<Integer> sums = new ArrayList<>();
 
