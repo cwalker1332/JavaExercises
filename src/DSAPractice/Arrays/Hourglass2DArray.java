@@ -38,6 +38,9 @@ public class Hourglass2DArray {
                         arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2];
                 // add each hourglassSum to arraylist
                 sums.add(hourglassSum);
+
+                // could combine the previous two steps by putting sums.add(arr[i][j] + ....);
+                // separated here so its easier to understand/follow
             }
         }
         // sort arraylist from smallest to largest hourglassSum
