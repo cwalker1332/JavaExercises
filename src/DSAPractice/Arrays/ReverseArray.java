@@ -1,5 +1,6 @@
 package DSAPractice.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 
     /*
         Exercise: Given an array of ints length 3, return a new array with
@@ -13,23 +14,27 @@ public class ReverseArray {
 
     // given a length of three the below method is faster
     public static int[] reverse(int[] nums) {
-        int[] arr = {nums[2], nums[1], nums[0]};
-        return arr;
+        int[] numsReversed = {nums[2], nums[1], nums[0]};
+        return numsReversed;
+
+        // can also make one line:
+        // return new int[]{nums[2], nums[1], nums[0]};
     }
 
     // if given an unknown length, use this way
     public static int[] reverseArr (int[] nums){
-        int[] arr = new int[nums.length];
-        for(int i = 0; i < arr.length; i++){
+        int[] reversed = new int[nums.length];
+        for(int i = 0; i < reversed.length; i++){
             for(int j = nums.length - 1; j >= 0; j--){
-                arr[i] = nums[j];
+                reversed[i] = nums[j];
             }
         }
-        return arr;
+        return reversed;
     }
 
     public static void main(String[] args) {
         int[] num = {1, 2, 3};
-        System.out.println(reverse(num));
+        System.out.println(Arrays.toString(reverse(num)));
+        System.out.println(Arrays.toString(reverseArr(num)));
     }
 }
