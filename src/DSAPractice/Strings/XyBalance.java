@@ -9,6 +9,8 @@ package DSAPractice.Strings;
                   xyBalance("yaaxbb") → false
      */
 
+    // Did not control for casing here
+
 public class XyBalance {
     public static boolean xyBalance(String str){
         // if string contains x and y, check to see if the last y appears after the last x
