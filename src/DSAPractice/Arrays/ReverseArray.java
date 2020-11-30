@@ -21,6 +21,7 @@ public class ReverseArray {
         // return new int[]{nums[2], nums[1], nums[0]};
     }
 
+    // TODO: fix
     // if given an unknown length, use this way
     public static int[] reverseArr (int[] nums){
         int[] reversed = new int[nums.length];
