@@ -1,6 +1,7 @@
 package DSAPractice.Arrays;
 
-    /* Exercise: given an int array of length 1 or more, return the difference
+    /*
+        Exercise: given an int array of length 1 or more, return the difference
                  between the largest and smallest value in the array
 
                  [10, 3, 5, 6] --> 7
