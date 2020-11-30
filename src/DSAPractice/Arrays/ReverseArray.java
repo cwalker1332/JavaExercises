@@ -1,5 +1,4 @@
 package DSAPractice.Arrays;
-import java.util.ArrayList;
 import java.util.Arrays;
 
     /*
@@ -17,7 +16,7 @@ public class ReverseArray {
         int[] numsReversed = {nums[2], nums[1], nums[0]};
         return numsReversed;
 
-        // can also make one line:
+        // can also make this one line by doing the following:
         // return new int[]{nums[2], nums[1], nums[0]};
     }
 
