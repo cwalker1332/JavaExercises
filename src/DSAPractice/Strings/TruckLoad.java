@@ -1,5 +1,12 @@
 package DSAPractice.Strings;
 
+    /*
+        Interview question:
+        A truck’s route involves adding and removing boxes along a route, defined as a string in the format:
+                            "+2b50 -50 +10b200"
+        Where + denotes adding weight and – denotes removed weight, what is the total weight of the truck's load?
+     */
+
 public class TruckLoad {
 
     public static int totalLoad(String input) {
