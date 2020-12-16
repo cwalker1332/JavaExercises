@@ -1,4 +1,4 @@
-package HackerRankChallenges;
+package Challenges.HackerRankChallenges;
 import java.util.*;
 
 public class LeftRotation {

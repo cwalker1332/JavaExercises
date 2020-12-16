@@ -1,4 +1,4 @@
-package CodecademyProjects;
+package Challenges;
 
     // this code is my answer to the common FizzBuzz challenge
 

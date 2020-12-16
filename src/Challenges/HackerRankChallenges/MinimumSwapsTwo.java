@@ -1,4 +1,4 @@
-package HackerRankChallenges;
+package Challenges.HackerRankChallenges;
 
 //TODO: enter problem or link to problem for each exercise
 //TODO: organize directory for categories maybe? can be done later when i complete more of them

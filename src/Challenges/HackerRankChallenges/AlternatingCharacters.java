@@ -1,4 +1,4 @@
-package HackerRankChallenges;
+package Challenges.HackerRankChallenges;
 
 public class AlternatingCharacters {
 
