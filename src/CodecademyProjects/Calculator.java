@@ -1,5 +1,4 @@
 package CodecademyProjects;
-
 import java.util.Scanner;
 
 public class Calculator {

@@ -1,6 +1,6 @@
 package CodecademyProjects;
 
-// can add a method energyTransfer() that exchanges batteryLevel between instances
+    // can add a method energyTransfer() that exchanges batteryLevel between instances
 
 public class Droid {
 
